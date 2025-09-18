@@ -1,0 +1,26 @@
+### `.gitignore`
+```gitignore
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.ipynb_checkpoints
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Envs
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

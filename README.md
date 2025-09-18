@@ -1,4 +1,4 @@
-# PSR Brazil Analysis — Seguro Rural (2006–2025)
+# Análise Exploratória do Prêmio de Seguro Rural (2006–2025)
 
 Este projeto investiga a evolução do **Programa de Subvenção ao Prêmio do Seguro Rural (PSR)** no Brasil (2006–2025), com foco em:
 
@@ -10,38 +10,40 @@ Este projeto investiga a evolução do **Programa de Subvenção ao Prêmio do S
 - Análise comparativa por seguradora  
 
 ## 🎯 Objetivo
+
 Projeto de **portfólio em Data Science**, guiado pela metodologia **CRISP-DM**, utilizando **pandas** e **geopandas**.
 
 ## 📂 Estrutura inicial
+
+```
 Seguro Rural/
 ├─ data/
-│ ├─ raw/ # Dados originais (2006–2025)
-│ ├─ interim/ # Limpezas parciais
-│ └─ processed/ # Dados prontos para análise
-├─ notebooks/ # Notebooks CRISP-DM (01 a 06)
-├─ src/ # Funções utilitárias (data, viz, etc.)
-├─ reports/ # Figuras e saídas
-├─ docs/ # Documentação e dicionário de dados
-
+│  ├─ raw/        # Dados originais (2006–2025)
+│  ├─ interim/    # Limpezas parciais
+│  └─ processed/  # Dados prontos para análise
+├─ notebooks/     # Notebooks CRISP-DM (01 a 06)
+├─ src/           # Funções utilitárias (data, viz, etc.)
+├─ reports/       # Figuras e saídas
+├─ docs/          # Documentação e dicionário de dados
+```
 
 ## ⚙️ Instalação
 
+```bash
 pip install -r requirements.txt
+```
 
-##🧭 Metodologia
+## 🧭 Metodologia
 
-O projeto segue as etapas da CRISP-DM:
+O projeto segue as etapas da **CRISP-DM**:
 
-Business Understanding
+1. **Business Understanding**  
+2. **Data Understanding**  
+3. **Data Preparation**  
+4. **Modeling** (opcional)  
+5. **Evaluation**  
+6. **Deployment / Reporting**  
 
-Data Understanding
+## 📜 Licença
 
-Data Preparation
-
-Modeling (opcional)
-
-Evaluation
-
-Deployment / Reporting
-
-
+[MIT](LICENSE)

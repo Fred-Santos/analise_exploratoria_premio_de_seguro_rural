@@ -44,6 +44,31 @@ O projeto segue as etapas da **CRISP-DM**:
 5. **Evaluation**  
 6. **Deployment / Reporting**  
 
+
+## 🔄 Como reproduzir a análise
+
+1. Baixe os dados originais do **Programa de Subvenção ao Prêmio do Seguro Rural (PSR)** disponíveis no portal oficial do Governo:
+   - [SISSER — dados abertos no dados.gov.br](https://dados.gov.br/dataset/sisser3)
+
+2. Salve os arquivos baixados na pasta:
+
+```
+data/raw/
+```
+
+3. Execute o script de pré-processamento (a ser criado em `src/data/preprocess.py`) para converter os arquivos CSV originais para o formato Parquet e padronizar os nomes de colunas.  
+   Isso irá gerar versões otimizadas em:
+
+```
+data/interim/   # Arquivos Parquet por ano
+data/processed/ # Arquivo consolidado 2006–2025
+```
+
+4. Abra os notebooks na pasta `notebooks/` e execute na ordem sugerida (01 → 06).
+
+> ⚠️ **Observação:** Os datasets originais não são disponibilizados diretamente no GitHub por causa do tamanho. É necessário obtê-los no portal oficial conforme descrito acima.
+
+
 ## 📜 Licença
 
 [MIT](LICENSE)
